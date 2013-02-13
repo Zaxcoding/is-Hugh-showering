@@ -1,0 +1,31 @@
+Enter your name, phone number (including area code), and carrier to sign up for mobile alerts when Hugh starts and finishes showering.<br>Additionally, enter a test message to make sure your info added correctly.
+<p>
+<form id="sms" name="sms" method="post" action="save.php">
+<table width="600">
+  <tr>
+    <td align="right" valign="top">Your name:</td>
+    <td align="left"><input name="name" type="text" id="name" size="30" /></td>
+  </tr>  
+  <tr>
+    <td align="right" valign="top">Your number:</td>
+    <td align="left"><input name="number" type="text" id="number" size="30" /></td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">Carrier:</td>
+    <td align="left"><select name="carrier" id="carrier">
+      <option value="verizon">Verizon</option>
+      <option value="tmobile">T-Mobile</option>
+	  <option value="sprint">Sprint</option>
+	  <option value="att">AT&amp;T</option>
+	  <option value="virgin">Virgin Mobile</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">Test Message:</td>
+    <td align="left"><textarea name="message" cols="40" rows="5" id="message"></textarea></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><input type="submit" name="Submit" value="Submit" /></td>
+    </tr>
+</table>
+</form>
